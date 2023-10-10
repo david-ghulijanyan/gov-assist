@@ -1,0 +1,33 @@
+[
+	{
+		"icon": "/assets/images/icon-people.webp",
+		"label": "50,000 people and their families will Live, Work and Study in USA."
+	},
+	{
+		"icon": "/assets/images/icon-medal.webp",
+		"label": "OFFICIAL USA Governmental program."
+	},
+	{
+		"icon": "/assets/images/icon-wallet-check.webp",
+		"label": "Your chance to LIVE, WORK & STUDY in USA."
+	},
+	{
+		"icon": "/assets/images/icon-clock.webp",
+		"label": "Simple %registration% within 5 minutes.",
+		"tags": {
+			"id": "registration",
+			"tag": "a",
+			"props": {
+				"href": "/registration"
+			}
+		}
+	},
+	{
+		"icon": "/assets/images/icon-message.webp",
+		"label": "Personal support in every step."
+	},
+	{
+		"icon": "/assets/images/icon-lovely.webp",
+		"label": "Double chance for married people to win the Green Card."
+	}
+]

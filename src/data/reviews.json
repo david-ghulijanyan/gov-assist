@@ -1,0 +1,30 @@
+[
+	{
+		"id": "review1",
+		"rate": 5,
+		"recommendation": "Highly recommend",
+		"message": "Nikka was a very professional consultant, always ready to assist us each step of the way. I was reminded of everthing and I had to take with to the interview and also later to pick my passport and my son`s. Thanks once more, I certainly recommend the service.",
+		"createdAt": "2023-01-01T00:00:00.000Z",
+		"date": "2022-01-01T00:00:00.000Z",
+		"user": {
+			"id": "user1",
+			"image": "/assets/images/user.webp",
+			"reviewsCount": 1,
+			"location": "KR"
+		}
+	},
+	{
+		"id": "review1",
+		"rate": 4.5,
+		"recommendation": "Highly recommend",
+		"message": "Nikka was a very professional consultant, always ready to assist us each step of the way. I was reminded of everthing and I had to take with to the interview and also later to pick my passport and my son`s. Thanks once more, I certainly recommend the service.",
+		"createdAt": "2023-01-01T00:00:00.000Z",
+		"date": "2022-01-01T00:00:00.000Z",
+		"user": {
+			"id": "user1",
+			"image": "/assets/images/user.webp",
+			"reviewsCount": 3,
+			"location": "KR"
+		}
+	}
+]

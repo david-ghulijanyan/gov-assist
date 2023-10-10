@@ -1,0 +1,21 @@
+[
+	{
+		"label": "The official deadline is running, so hurry up and %apply here!%",
+		"tags": {
+			"id": "registration",
+			"tag": "a",
+			"props": {
+				"href": "/registration"
+			}
+		}
+	},
+	{
+		"label": "Mandatory Government Fees for Green Cards"
+	},
+	{
+		"label": "Subscribe to be the first do receive updates and be in advantage on your application proccess"
+	},
+	{
+		"label": "This is a full copy of the official DV Lottery application form. Use it for training only. You will need to apply on the official website www.dvlottery.state.gov when it opens to take part in the lottery."
+	}
+]

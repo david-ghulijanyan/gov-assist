@@ -1,0 +1,22 @@
+[
+	{
+		"id": "terms-of-service",
+		"label": "Terms of Service"
+	},
+	{
+		"id": "privacy-policy",
+		"label": "Privacy Policy"
+	},
+	{
+		"id": "legal-disclaimer",
+		"label": "Legal Disclaimer"
+	},
+	{
+		"id": "refund-policy",
+		"label": "Refund Policy"
+	},
+	{
+		"id": "terms-of-use",
+		"label": "Terms of Use"
+	}
+]

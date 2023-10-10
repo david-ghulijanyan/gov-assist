@@ -1,0 +1,57 @@
+[
+	[
+		{
+			"id": "firstName",
+			"name": "firstName",
+			"placeholder": "First Name",
+			"type": "text"
+		},
+		{
+			"id": "lastName",
+			"name": "lastName",
+			"placeholder": "Last Name",
+			"type": "text"
+		}
+	],
+	[
+		{
+			"id": "email",
+			"name": "email",
+			"placeholder": "Email Address",
+			"type": "email"
+		},
+		{
+			"id": "emailConfirmation",
+			"name": "emailConfirmation",
+			"placeholder": "Your Email Again",
+			"type": "email"
+		}
+	],
+	{
+		"id": "countryOfBirth",
+		"name": "countryOfBirth",
+		"placeholder": "Your country of birth",
+		"type": "select",
+		"options": [
+			"USA",
+			"Canada",
+			"Australia"
+		]
+	},
+	{
+		"id": "mirialStatus",
+		"name": "mirialStatus",
+		"placeholder": "Marial Status",
+		"type": "select",
+		"options": [
+			"Single",
+			"Married"
+		]
+	},
+	{
+		"id": "school",
+		"name": "school",
+		"label": "Yes, I finished high school OR I have qualifying training.",
+		"type": "checkbox"
+	}
+]

@@ -1,7 +1,8 @@
+import { FC, PropsWithChildren } from 'react';
 import styles from './quote.module.scss';
 
-function Quote() {
-	return <div className={styles.root}>Quote</div>
+const Quote: FC<PropsWithChildren> = ({children}) => {
+	return <div className={styles.root}>{children}</div>
 }
 
 export { Quote };

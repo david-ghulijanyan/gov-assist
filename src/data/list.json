@@ -14,13 +14,15 @@
 	{
 		"icon": "/assets/images/icon-clock.webp",
 		"label": "Simple %registration% within 5 minutes.",
-		"tags": {
-			"id": "registration",
-			"tag": "a",
-			"props": {
-				"href": "/registration"
+		"tags": [
+			{
+				"id": "registration",
+				"tag": "a",
+				"props": {
+					"href": "/registration"
+				}
 			}
-		}
+		]
 	},
 	{
 		"icon": "/assets/images/icon-message.webp",

@@ -1,9 +1,9 @@
 import { ComponentType, createElement } from "react";
 
 
-interface TagProps {
+export interface TagProps {
     tag: keyof JSX.IntrinsicElements | ComponentType<any>;
-    id: string;
+    id?: string;
     props?: Record<string, any>;
 }
 

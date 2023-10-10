@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import '../ui/reset.scss';
 import './globals.scss';
 
 const inter = Inter({

@@ -1,7 +1,8 @@
+import { FC, PropsWithChildren } from 'react';
 import styles from './hero.module.scss';
 
-function Hero() {
-	return <div className={styles.root}>Hero</div>
+const Hero: FC<PropsWithChildren> = ({children}) => {
+	return <div className={styles.root}>{children}</div>
 }
 
 export { Hero };

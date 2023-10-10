@@ -1,13 +1,15 @@
 [
 	{
 		"label": "The official deadline is running, so hurry up and %apply here!%",
-		"tags": {
-			"id": "registration",
-			"tag": "a",
-			"props": {
-				"href": "/registration"
+		"tags": [
+			{
+				"id": "apply here!",
+				"tag": "a",
+				"props": {
+					"href": "/registration"
+				}
 			}
-		}
+		]
 	},
 	{
 		"label": "Mandatory Government Fees for Green Cards"

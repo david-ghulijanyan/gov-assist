@@ -1,0 +1,46 @@
+// sizes
+$size-base: 16px !default;
+
+$font-size-base: calc($size-base + (24 - 16) * (100vw - 400px) / (1600 - 400)) !default;
+$font-size-clamp: clamp($size-base, $font-size-base, 24px) !default;
+
+// borders
+$border-zero: 0 !default;
+$border-xxs: 2px !default;
+$border-xs: 6px !default;
+$border-s: 8px !default;
+$border-m: 14px !default;
+$border-l: 22px !default;
+$border-xl: 43px !default;
+
+// base colors
+$green: #4AC97D !default;
+$blue: #1F3655 !default;
+$red: #FD816B !default;
+$yellow: #FFD166 !default;
+
+// greys
+$white: #ffffff !default;
+$grey: #F7F8F9 !default;
+$grey-m: #F5F5F5 !default;
+$grey-l: #F3F3F3 !default;
+$grey-xl: #D2D2D2 !default;
+$grey-xxl: #535353 !default;
+$black: #000000 !default;
+
+// theme colors
+$primary: $green !default;
+$secondary: $blue !default;
+
+// other colors
+$green-l: #00B87C !default;
+$blue-xs: #00579B !default;
+$blue-m: #01264A !default;
+$blue-l: #170A61 !default;
+$blue-xl: #011527 !default;
+
+// brand-colors
+$brand-gradient: linear-gradient(247.32deg, #002A54 0%, #001C33 100%) !default;
+
+// fonts
+$base-font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;

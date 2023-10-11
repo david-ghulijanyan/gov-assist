@@ -7,13 +7,14 @@ type TextProps = {
   variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'small';
   weight?: 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl';
   color?: 'primary' | 'secondary' | 'info' | 'danger' | 'warning' | 'success';
+  className?: string
 };
 
-const Text: FC<PropsWithChildren<TextProps>> = ({ as = 'span', variant, weight, color, children }) => {
+const Text: FC<PropsWithChildren<TextProps>> = ({ className, as = 'span', variant, weight, color, children }) => {
   const Tag = as;
 
   return (
-    <Tag className={classNames(styles.root, variant && styles[variant], weight && styles[weight], color && styles[color])} style={{ color }}>
+    <Tag className={classNames(styles.root, variant && styles[variant], weight && styles[weight], color && styles[color], className)} style={{ color }}>
       {children}
     </Tag>
   );

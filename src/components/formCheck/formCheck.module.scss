@@ -1,1 +1,37 @@
-.root {}
+.root {
+	padding: 35px 0 0;
+}
+
+.content {
+	height: 100%;
+	padding: 57px;
+	border-radius: var(--gov-border-xl);
+	background-color: var(--gov-white);
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.arrow {
+	width: 33px;
+	height: 24px;
+	margin-right: 24px;
+	path {
+		fill: var(--gov-primary);
+	}
+}
+
+.arrowText {
+	display: flex;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 26px;
+	input {
+		padding: 24px;
+		background-color: var(--gov-grey-xl);
+		border-radius: var(--gov-border-m);
+	}
+}

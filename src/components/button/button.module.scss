@@ -1,1 +1,58 @@
-.root {}
+$btn-variants: (
+  primary: (bg: var(--gov-primary), text: white, border: var(--gov-primary)),
+  secondary: (bg: var(--gov-secondary), text: white, border: var(--gov-secondary)),
+  outine-primary: (bg: rgba(0,0,0,1), text: var(--gov-primary), border: var(--gov-primary)),
+  outine-secondary: (bg: rgba(0,0,0,1), text: var(--gov-secondary), border: var(--gov-secondary)),
+);
+
+$btn-borders: (
+  '0': var(--gov-border-zero),
+  'xxs': var(--gov-border-xxs),
+  'xs': var(--gov-border-xs),
+  's': var(--gov-border-s),
+  'm': var(--gov-border-m),
+  'l': var(--gov-border-l),
+  'xl': var(--gov-border-xl),
+  'xxl': var(--gov-border-xxl),
+);
+
+$btn-sizes: (
+  'h1': var(--gov-h1-size),
+  'h2': var(--gov-h2-size),
+  'h3': var(--gov-h3-size),
+  'h4': var(--gov-h4-size),
+  'h5': var(--gov-h5-size),
+  'h6': var(--gov-h6-size),
+  'small': var(--gov-small-size),
+);
+
+.btn {
+  padding: 0.5em 1em;
+  font-weight: bold;
+  border-width: 2px;
+  border-style: solid;
+  transition: filter 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+  @each $variant, $styles in $btn-variants {
+    &.#{$variant} {
+      background-color: map-get($styles, bg);
+      color: map-get($styles, text);
+      border-color: map-get($styles, border);
+
+      &:hover,
+      &:focus {
+				filter: opacity(0.8);
+      }
+    }
+  }
+  @each $size, $border in $btn-borders {
+    &.border-#{$size} {
+      border-radius: $border;
+    }
+  }
+  @each $label, $padding in $btn-sizes {
+    &.size-#{$label} {
+      padding: $padding;
+    }
+  }
+}

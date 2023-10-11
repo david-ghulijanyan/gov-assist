@@ -7,6 +7,14 @@
   --gov-font-size: #{$font-size-base};
   --gov-font-size: #{$font-size-clamp};
 
+  --gov-h1-size: calc(#{$size-base} + (64 - 16) * (100vw - 400px) / (1600 - 400));
+  --gov-h2-size: calc(#{$size-base} + (54 - 16) * (100vw - 400px) / (1600 - 400));
+  --gov-h3-size: calc(#{$size-base} + (36 - 16) * (100vw - 400px) / (1600 - 400));
+  --gov-h4-size: calc(#{$size-base} + (24 - 16) * (100vw - 400px) / (1600 - 400));
+  --gov-h5-size: calc(#{$size-base} + (20 - 16) * (100vw - 400px) / (1600 - 400));
+  --gov-h6-size: calc(#{$size-base} + (16 - 16) * (100vw - 400px) / (1600 - 400));
+  --gov-small-size: calc(#{$size-base} + (12 - 16) * (100vw - 400px) / (1600 - 400));
+  
   // borders
   --gov-border-zero: #{$border-zero};
   --gov-border-xxs: #{$border-xxs};

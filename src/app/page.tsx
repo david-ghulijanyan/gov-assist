@@ -1,4 +1,4 @@
-import { Find, Footer, FormSubscribe, Home, Testimotional } from '@/components';
+import { Find, Footer, FormSubscribe, Home, Carousel } from '@/components';
 import { FC, PropsWithChildren } from 'react';
 import "../ui/reset.scss";
 import styles from './page.module.scss';
@@ -9,7 +9,7 @@ const Index: FC<PropsWithChildren> = () => {
     <main className={styles.root}> 
       <Home />
       <Find />
-      <Testimotional />
+      <Carousel />
       <FormSubscribe />
       <Footer />
     </main>

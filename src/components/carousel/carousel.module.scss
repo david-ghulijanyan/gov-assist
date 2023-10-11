@@ -1,1 +1,73 @@
-.root {}
+.root {
+	padding: 80px 0;
+	border-bottom: 1px solid var(--gov-grey-xl);
+}
+
+.icon {
+	fill: var(--gov-black);
+	margin-right: 14px;
+	path {
+		fill: var(--gov-black);
+		stroke: var(--gov-black);
+	}
+}
+.place {
+	fill: none;
+	path {
+		fill: var(--gov-black);
+		stroke: none;
+	}
+}
+.carouselContainer {
+	padding: 40px 0 0;
+  position: relative;
+  overflow: hidden;
+	background-image: url("/assets/images/undraw-personal-opinions.webp");
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+.carouselWrapper {
+  display: flex;
+  transition: all 0.3s ease-in-out;
+}
+
+.reviewSlide {
+  flex: 0 0 100%;
+  padding: 20px;
+  box-sizing: border-box;
+	> div {
+		width: 60%;
+	}
+}
+.userWrapper {
+	gap: 24px;
+}
+.created {
+	padding-top: 24px;
+	border-top: 1px solid var(--gov-grey-xl);
+}
+.rating {
+	
+}
+.review {
+	gap: 24px;
+}
+.userImage {
+	width: 72px;
+	height: 72px;
+  border-radius: 50%;
+}
+
+.carouselArrow {
+  padding: 10px 20px;
+  cursor: pointer;
+	svg {
+			fill: var(--gov-primary);
+		path {
+
+			fill: var(--gov-primary);
+		}
+	}
+}

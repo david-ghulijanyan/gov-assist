@@ -1,3 +1,7 @@
 .root {
 	display: flex;
+	color: inherit;
+	&:hover {
+		text-decoration: underline;
+	}
 }

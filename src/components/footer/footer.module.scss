@@ -1,1 +1,16 @@
-.root {}
+.root {
+	color: var(--gov-white);
+	background-image:  var(--gov-brand-gradient);
+	> div:first-child {
+		padding: var(--gov-h2-size);
+	}
+}
+.header {
+	border-bottom: 1px solid var(--gov-grey-xl);
+		padding: var(--gov-h6-size) 0;
+		margin-bottom: var(--gov-h4-size);
+}
+.copyrights {
+	background-color: var(--gov-blue-xl);
+	padding: var(--gov-h5-size);
+}

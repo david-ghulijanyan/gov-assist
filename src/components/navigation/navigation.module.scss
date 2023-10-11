@@ -1,1 +1,11 @@
-.root {}
+.root {
+	ul {
+		display: flex;
+		width: 100%;
+		flex-grow: 1;
+		gap: var(--gov-h3-size);
+	}
+	a {
+		text-decoration: underline;
+	}
+}

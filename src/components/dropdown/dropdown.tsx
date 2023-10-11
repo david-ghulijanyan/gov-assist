@@ -1,3 +1,5 @@
+'use client';
+
 import { FC, useRef, useState } from 'react';
 import styles from './dropdown.module.scss';
 

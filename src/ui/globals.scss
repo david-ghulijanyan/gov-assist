@@ -1,0 +1,54 @@
+@use "../ui/variables.scss" as *;
+
+:root {
+  // sizes
+  --gov-size-base: #{$size-base};
+
+  --gov-font-size: #{$font-size-base};
+  --gov-font-size: #{$font-size-clamp};
+
+  // borders
+  --gov-border-zero: #{$border-zero};
+  --gov-border-xxs: #{$border-xxs};
+  --gov-border-xs: #{$border-xs};
+  --gov-border-s: #{$border-s};
+  --gov-border-m: #{$border-m};
+  --gov-border-l: #{$border-l};
+  --gov-border-xl: #{$border-xl};
+
+  // base colors
+  --gov-green: #{$green};
+  --gov-blue: #{$blue};
+  --gov-red: #{$red};
+  --gov-yellow: #{$yellow};
+
+  // greys
+  --gov-white: #{$white};
+  --gov-grey: #{$grey};
+  --gov-grey-m: #{$grey-m};
+  --gov-grey-l: #{$grey-l};
+  --gov-grey-xl: #{$grey-xl};
+  --gov-grey-xxl: #{$grey-xxl};
+  --gov-black: #{$black};
+
+  // theme colors
+  --gov-primary: #{$primary};
+  --gov-secondary: #{$secondary};
+  --gov-info: #{$secondary};
+  --gov-danger: #{$secondary};
+  --gov-warning: #{$secondary};
+  --gov-success: #{$secondary};
+
+  // other colors
+  --gov-green-l: #{$green-l};
+  --gov-blue-xs: #{$blue-xs};
+  --gov-blue-m: #{$blue-m};
+  --gov-blue-l: #{$blue-l};
+  --gov-blue-xl: #{$blue-xl};
+
+  // brand-colors
+  --gov-brand-gradient: #{$brand-gradient};
+
+  // fonts
+  --gov-base-font: #{$base-font-family};
+}

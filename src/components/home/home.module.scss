@@ -1,3 +1,16 @@
 .root {
 	display: flex;
 }
+.container {
+	height: 100vh;
+	padding-top: 53px;
+	color: var(--gov-white);
+}
+.content {
+	> div {
+		flex-basis: 100%;
+		> * {
+			flex-basis: 100%;
+		}
+	}
+}

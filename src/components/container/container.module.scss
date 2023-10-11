@@ -1,1 +1,24 @@
-.root {}
+.root {
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 100%;
+
+  // Tablet
+  @media (min-width: 768px) {
+    max-width: 720px;
+    padding: 0 24px;
+  }
+
+  // Small desktop / large tablet
+  @media (min-width: 992px) {
+    max-width: 960px;
+    padding: 0 32px;
+  }
+
+  // Large desktop
+  @media (min-width: 1512px) {
+    max-width: 1320px;
+    padding: 0 96px;
+  }
+}

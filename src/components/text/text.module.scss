@@ -1,1 +1,134 @@
-.root {}
+// 64px - 700
+
+// 54px - 700
+// 54px - 300
+
+// 36px - 900
+
+// 24px - 800
+// 24px - 700
+// 24px - 500
+
+// 20px - 700
+// 20px - 400
+
+// 16px - 700
+// 16px - 400
+// 16px - 500
+// 16px - 300
+
+// 12px - 300
+
+// Base variable
+$size-base: 16px !default;
+
+// Font size calculations
+$h1-size: calc($size-base + (64 - 16) * (100vw - 400px) / (1600 - 400));
+$h2-size: calc($size-base + (54 - 16) * (100vw - 400px) / (1600 - 400));
+$h3-size: calc($size-base + (36 - 16) * (100vw - 400px) / (1600 - 400));
+$h4-size: calc($size-base + (24 - 16) * (100vw - 400px) / (1600 - 400));
+$h5-size: calc($size-base + (20 - 16) * (100vw - 400px) / (1600 - 400));
+$h6-size: calc($size-base + (16 - 16) * (100vw - 400px) / (1600 - 400));
+$small-size: calc($size-base + (12 - 16) * (100vw - 400px) / (1600 - 400));
+
+// Clamping sizes
+$h1-clamp: clamp(48px, $h1-size, 64px);
+$h2-clamp: clamp(40px, $h2-size, 54px);
+$h3-clamp: clamp(28px, $h3-size, 36px);
+$h4-clamp: clamp(20px, $h4-size, 24px);
+$h5-clamp: clamp(18px, $h5-size, 20px);
+$h6-clamp: clamp(14px, $h6-size, 16px);
+$small-clamp: clamp(10px, $small-size, 12px);
+
+$xs: 300;
+$s: 400;
+$m: 500;
+$l: 700;
+$xl: 800;
+$xxl: 900;
+
+.root {
+	font-size: inherit;
+	font-weight: inherit;
+}
+.h1 {
+		font-size: $h1-clamp;
+		font-weight: $l;
+	}
+
+.h2 {
+	font-size: $h2-clamp;
+	font-weight: $l;
+	}
+
+.h3 {
+	font-size: $h3-clamp;
+	font-weight: $l;
+	}
+
+.h4 {
+	font-size: $h4-clamp;
+	font-weight: $l;
+	}
+
+.h5 {
+	font-size: $h5-clamp;
+	font-weight: $l;
+	}
+
+.h6 {
+	font-size: $h6-clamp;
+	font-weight: $l;
+	}
+
+.small {
+	font-size: $small-clamp;
+}
+
+.xs {
+	font-weight: $xs;
+}
+
+.s {
+	font-weight: $s;
+}
+
+.m {
+	font-weight: $m;
+}
+
+.l {
+	font-weight: $l;
+}
+
+.xl {
+	font-weight: $xl;
+}
+
+.xxl {
+	font-weight: $xxl;
+}
+
+.primary {
+	color: var(--gov-primary);
+}
+
+.secondary {
+	color: var(--gov-secondary);
+}
+
+.info {
+	color: var(--gov-info);
+}
+
+.danger {
+	color: var(--gov-danger);
+}
+
+.warning {
+	color: var(--gov-warning);
+}
+
+.success {
+	color: var(--gov-success);
+}

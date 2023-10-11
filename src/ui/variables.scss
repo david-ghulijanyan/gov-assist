@@ -11,13 +11,20 @@ $border-xs: 6px !default;
 $border-s: 8px !default;
 $border-m: 14px !default;
 $border-l: 22px !default;
-$border-xl: 43px !default;
+$border-xl: 24px !default;
+$border-xxl: 43px !default;
 
 // base colors
 $green: #4AC97D !default;
 $blue: #1F3655 !default;
 $red: #FD816B !default;
 $yellow: #FFD166 !default;
+// other colors
+$green-l: #00B87C !default;
+$blue-xs: #00579B !default;
+$blue-m: #01264A !default;
+$blue-l: #170A61 !default;
+$blue-xl: #011527 !default;
 
 // greys
 $white: #ffffff !default;
@@ -31,13 +38,11 @@ $black: #000000 !default;
 // theme colors
 $primary: $green !default;
 $secondary: $blue !default;
+$info: $blue-xs !default;
+$danger: $red !default;
+$warning: $yellow !default;
+$success: $green !default;
 
-// other colors
-$green-l: #00B87C !default;
-$blue-xs: #00579B !default;
-$blue-m: #01264A !default;
-$blue-l: #170A61 !default;
-$blue-xl: #011527 !default;
 
 // brand-colors
 $brand-gradient: linear-gradient(247.32deg, #002A54 0%, #001C33 100%) !default;

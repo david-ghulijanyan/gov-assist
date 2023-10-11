@@ -1,1 +1,8 @@
-.root {}
+.root {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	> li {
+		display: block;
+	}
+}

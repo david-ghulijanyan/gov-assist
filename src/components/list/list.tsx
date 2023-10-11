@@ -1,9 +1,8 @@
 import { list as rawData } from '@/data';
 import { replaceWithJsx } from '@/utils';
+import { TagProps } from '@/utils/replaceWithJsx';
 import Image from 'next/image';
 import styles from './list.module.scss';
-import { ComponentType } from 'react';
-import { TagProps } from '@/utils/replaceWithJsx';
 
 type ListItem = {
     icon?: string;

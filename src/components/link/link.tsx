@@ -2,8 +2,13 @@ import NextLink from 'next/link';
 import { FC, PropsWithChildren } from 'react';
 import styles from './link.module.scss';
 
-const Link: FC<PropsWithChildren<{}>> = ({children, href}: ) => {
-	return <NextLink href={href} className={styles.root}>{children}</NextLink>
+interface LinkProps {
+	href: string,
+	target?: '_blank' | '_parent' | '_self' | '_top'
+};
+
+const Link: FC<PropsWithChildren<LinkProps>> = ({ children, href, target } ) => {
+	return <NextLink target={target} href={href} className={styles.root}>{children}</NextLink>
 }
 
 export { Link };

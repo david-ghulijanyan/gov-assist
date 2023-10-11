@@ -1,8 +1,16 @@
 $btn-variants: (
   primary: (bg: var(--gov-primary), text: white, border: var(--gov-primary)),
   secondary: (bg: var(--gov-secondary), text: white, border: var(--gov-secondary)),
+  danger: (bg: var(--gov-danger), text: white, border: var(--gov-danger)),
+  success: (bg: var(--gov-success), text: white, border: var(--gov-success)),
+  warning: (bg: var(--gov-warning), text: white, border: var(--gov-warning)),
+  info: (bg: var(--gov-info), text: white, border: var(--gov-info)),
   outine-primary: (bg: rgba(0,0,0,1), text: var(--gov-primary), border: var(--gov-primary)),
   outine-secondary: (bg: rgba(0,0,0,1), text: var(--gov-secondary), border: var(--gov-secondary)),
+  outine-danger: (bg: rgba(0,0,0,1), text: var(--gov-danger), border: var(--gov-danger)),
+  outine-success: (bg: rgba(0,0,0,1), text: var(--gov-success), border: var(--gov-success)),
+  outine-warning: (bg: rgba(0,0,0,1), text: var(--gov-warning), border: var(--gov-warning)),
+  outine-info: (bg: rgba(0,0,0,1), text: var(--gov-info), border: var(--gov-info)),
 );
 
 $btn-borders: (

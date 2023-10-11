@@ -1,7 +1,6 @@
-import styles from './input.module.scss';
+import { FC } from "react";
+import { TextField } from "../formBuilder/types";
 
-function Input() {
-	return <div className={styles.root}>Input</div>
-}
-
-export { Input };
+export const Input: FC<TextField> = ({ id, name, placeholder }) => (
+  <input id={id} name={name} placeholder={placeholder} type="text" />
+);

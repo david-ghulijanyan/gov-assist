@@ -4,7 +4,7 @@ import styles from './button.module.scss';
 
 export type ButtonSize = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'small';
 
-export type ButtonVariant = 'primary' | 'secondary' | 'outline-primary' | 'outline-secondary';
+export type ButtonVariant = 'primary' | 'secondary' | 'outline-primary' | 'outline-secondary' | 'danger' | 'info' | 'success' | 'warning';
 
 export type ButtonBorder = '0' |'xxs' |'xs' |'s' |'m' |'l' |'l' |'xl' |'xxl';
 

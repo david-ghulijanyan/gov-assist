@@ -42,10 +42,10 @@
   // theme colors
   --gov-primary: #{$primary};
   --gov-secondary: #{$secondary};
-  --gov-info: #{$secondary};
-  --gov-danger: #{$secondary};
-  --gov-warning: #{$secondary};
-  --gov-success: #{$secondary};
+  --gov-info: #{$info};
+  --gov-danger: #{$danger};
+  --gov-warning: #{$warning};
+  --gov-success: #{$success};
 
   // other colors
   --gov-green-l: #{$green-l};

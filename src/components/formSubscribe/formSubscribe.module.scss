@@ -1,1 +1,39 @@
-.root {}
+.root {
+	padding: 60px 0;
+	form {
+		background-color: var(--gov-white);
+		padding: 12px;
+		border-radius: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	button {
+		font-size: 0.9em;
+		line-height: 1;
+		padding: calc(var(--gov-small-size) / 2) var(--gov-small-size) !important;	
+	}
+}
+.wrapper {
+background-color: var(--gov-grey-l);
+align-items: center;
+overflow: hidden;
+border-radius: var(--gov-h5-size);
+padding: var(--gov-h3-size) var(--gov-h2-size);
+gap: var(--gov-h4-size);
+position: relative;
+margin: 40px 0;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 13px;
+			display: block;
+			height: 100%;
+			background-color: var(--gov-blue-xs);
+		}
+	form {
+		width: calc(100% - var(--gov-h1-size));
+		flex-grow: 1;
+	}
+}

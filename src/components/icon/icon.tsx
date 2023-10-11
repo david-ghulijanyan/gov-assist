@@ -36,7 +36,7 @@ const Icon: React.FC<IconProps> = ({ name, className, style }) => {
 		case 'document-text':
 			return (
 				<svg className={className} style={style} width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M12.375 13.512h1.137M6.688 13.512h2.786M6.688 18.062h4.55M1 8.962C1 3.275 3.275 1 8.962 1h5.688M23.75 10.1v5.687c0 5.687-2.275 7.962-7.963 7.962H8.962C3.275 23.75 1 21.474 1 15.787V13.49M19.2 10.1c-3.413 0-4.55-1.138-4.55-4.55V1l9.1 9.1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M12.375 13.512h1.137M6.688 13.512h2.786M6.688 18.062h4.55M1 8.962C1 3.275 3.275 1 8.962 1h5.688M23.75 10.1v5.687c0 5.687-2.275 7.962-7.963 7.962H8.962C3.275 23.75 1 21.474 1 15.787V13.49M19.2 10.1c-3.413 0-4.55-1.138-4.55-4.55V1l9.1 9.1" stroke="#fff" stroke-width="2" />
 				</svg>
 			);
 		case 'place':

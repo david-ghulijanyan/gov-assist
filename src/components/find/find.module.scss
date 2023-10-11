@@ -1,3 +1,13 @@
 .root {
 	display: flex;
+	background-color: var(--gov-grey);
+	padding: 80px 0 40px;
+}
+.icon {
+	fill: none;
+	margin-right: 14px;
+	path {
+		fill: none;
+		stroke: var(--gov-black);
+	}
 }

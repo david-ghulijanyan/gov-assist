@@ -1,6 +1,5 @@
 import { ComponentType, createElement } from "react";
 
-
 export interface TagProps {
     tag: keyof JSX.IntrinsicElements | ComponentType<any>;
     id?: string;
@@ -8,8 +7,8 @@ export interface TagProps {
 }
 
 function replaceWithJSX(input: string, tags: TagProps[]) {
-    const splitByPattern = input.split(/%\w+%/g);
-    const matches = Array.from(input.matchAll(/%(\w+)%/g));
+    const splitByPattern = input.split(/%[\w\s\-_]+%/g);
+    const matches = Array.from(input.matchAll(/%([\w\s\-_]+)%/g));
 
     const interleaved: (string | JSX.Element)[] = [];
     splitByPattern.forEach((part, idx) => {

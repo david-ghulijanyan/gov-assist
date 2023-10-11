@@ -1,5 +1,9 @@
 import { FC } from 'react';
 import { replaceWithJsx } from '../../utils';
+import { Button } from '../button';
+import { Flex } from '../flex';
+import { Link } from '../link';
+import { Text } from '../text';
 import styles from "./table.module.scss";
 
 interface TableProps {
@@ -24,7 +28,16 @@ const Table: FC<TableProps> = ({ data }) => {
   const totalAbroad = data.reduce((acc, item) => acc + parsePrice(item.abroad), 0);
 
   return (
-    <div className={styles.root}>
+    <>
+      <div className={styles.root}>
+        <Flex alignItems='center' justifyContent='space-between' className={styles.header}>
+          <Text variant='h4' className={styles.title}>
+            Mandatory Government Fees for Green Cards
+          </Text>
+          <Button variant='danger' border='m' size='s'>
+            Apply now
+          </Button>
+        </Flex>
       <table className={styles.table}>
       <thead>
         <tr>
@@ -53,8 +66,12 @@ const Table: FC<TableProps> = ({ data }) => {
           <td>${totalAbroad}</td>
         </tr>
       </tfoot>
-    </table>
-    </div>
+      </table>
+      </div>
+      <Flex className={styles.calc} alignItems='center' justifyContent='flex-end'>
+        <Text weight='300'>Fees are subject to change, please use <Link target='_blank' href='https://www.uscis.gov/feecalculator'>this calculator</Link></Text>
+      </Flex>
+      </>
   );
 }
 

@@ -1,1 +1,13 @@
-.root {}
+.root {
+  display: flex;
+  gap: 4px;
+  width: 200px;
+  align-items: center;
+}
+
+.rateBlock {
+  height: 36px;
+	width: 36px;
+	background-color: var(--gov-grey-xxl); 
+  transition: background 0.3s;
+}

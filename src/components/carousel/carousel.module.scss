@@ -1,8 +1,14 @@
 .root {
 	padding: 60px 0;
 	border-bottom: 1px solid var(--gov-grey-xl);
+			background-image: url("/assets/images/trust.webp");
+	background-position: 93% 10%;
+	background-repeat: no-repeat;
+	background-size: 176px 83px;
 }
+.title {
 
+}
 .icon {
 	fill: var(--gov-black);
 	margin-right: 14px;
@@ -25,7 +31,7 @@
 	background-image: url("/assets/images/undraw-personal-opinions.webp");
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: auto 100%;
+	background-size: auto 85%;
 }
 
 .carouselWrapper {
@@ -61,13 +67,27 @@
 }
 
 .carouselArrow {
-  padding: 10px 20px;
+  padding: 20px;
   cursor: pointer;
-	svg {
-			fill: var(--gov-primary);
-		path {
+	&:first-child {
+		transform: rotate(90deg);
+	}
+	&:last-child {
+		transform: rotate(-90deg);
+	}
+	&:hover {
+			path {
 
-			fill: var(--gov-primary);
-		}
+		stroke: var(--gov-primary);
+	}
+	}
+}
+
+.carouselArrowIcon {
+		transform: scale(1.8);
+	fill: none;
+	path {
+		fill: none;
+		stroke: var(--gov-grey-xl);
 	}
 }

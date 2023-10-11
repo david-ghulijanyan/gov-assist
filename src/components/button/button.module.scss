@@ -40,6 +40,7 @@ $btn-sizes: (
   border-width: 2px;
   border-style: solid;
   transition: filter 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  cursor: pointer;
 
   @each $variant, $styles in $btn-variants {
     &.#{$variant} {

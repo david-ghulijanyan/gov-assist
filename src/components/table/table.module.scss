@@ -31,3 +31,29 @@
 		text-decoration: underline;
 	}
 }
+.calc {
+	padding: 16px 0;
+	> span {
+		display: flex;
+		gap: 4px;
+
+	}
+	a {
+		text-decoration: underline;
+	}
+}
+.header {
+	margin-bottom: 30px;
+}
+.title {
+	position: relative;
+	padding-left: 30px;
+	&::before {
+		position: absolute;
+		width: 6px;
+		height: 100%;
+		background-color: var(--gov-blue-xs);
+		content: "";
+		left: 0;
+	}
+}

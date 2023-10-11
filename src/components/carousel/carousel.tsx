@@ -9,6 +9,7 @@ import { Container } from '../container';
 import { Flex } from '../flex';
 import { Icon } from '../icon';
 import { Link } from '../link';
+import { Rate } from '../rate';
 import { Text } from '../text';
 import styles from './carousel.module.scss';
 
@@ -86,13 +87,13 @@ const Carousel: FC<CarouselProps> = ({ reviews = data }) => {
 												<Link href={genUserLink(review.user.id)}>{review.user.name}</Link>
 											</Text>
 											<Flex>
-												<Text variant='h5' weight='m' style={{ flexBasis: "20%"}}>{review.user.reviewsCount} reviews</Text>
+												<Text variant='h5' weight='m' style={{ flexBasis: "30%"}}>{review.user.reviewsCount} reviews</Text>
 												<Text variant='h5' weight='m'><Icon name="place" className={styles.place} /> <span>{review.user.location}</span></Text>
 											</Flex>
 									</Flex>
 								</Flex>
 								<Flex justifyContent='flex-end' className={styles.created}>{format(new Date(review.createdAt), "MMM dd, yyyy")}</Flex>
-								<Flex justifyContent='flex-start' className={styles.rating}>asasd</Flex>
+								<Flex justifyContent='flex-start' className={styles.rating}><Rate/></Flex>
 								<Flex className={styles.review} direction="column">
 									<Text variant='h4'><Link href={genUserLink(review.id)}>{review.recommendation}</Link></Text>
 									<Text as='p' style={{lineHeight: 1.3, textAlign: "justify"}}>{review.message}</Text>
@@ -104,9 +105,9 @@ const Carousel: FC<CarouselProps> = ({ reviews = data }) => {
 						</div>
 					))}
 				</div>
-				<Flex justifyContent="center">
-					<button onClick={handlePrev} className={styles.carouselArrow}><Icon name='arrow-right' /></button>
-					<button onClick={handleNext} className={styles.carouselArrow}><Icon name='arrow-right' /></button>
+				<Flex justifyContent="center" style={{gap: 40}}>
+					<button onClick={handlePrev} className={styles.carouselArrow}><Icon className={styles.carouselArrowIcon} name='arrow-down' /></button>
+					<button onClick={handleNext} className={styles.carouselArrow}><Icon className={styles.carouselArrowIcon} name='arrow-down' /></button>
 				</Flex>
 			</div>
 		</Container>

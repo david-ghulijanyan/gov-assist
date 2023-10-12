@@ -4,21 +4,38 @@
 
 .button {
   cursor: pointer;
+  display: flex;
+  gap: 8px;
+  position: relative;
+  color: var(--gov-white);
+  border: none;
+  align-items: center;
+}
+.icon {
+  fill: none;
+  path {
+    fill: none;
+  }
 }
 
 .list {
   position: absolute;
   top: 100%;
-  left: 0;
   right: 0;
   z-index: 1000;
   list-style: none;
   padding: 0;
   margin: 0;
-  border: 1px solid gray;
+  border: 0;
+  border-radius: var(--gov-small-size);
+  color: var(--gov-black);
   background-color: white;
-
+  width: 200px;
+  img {
+    margin-right: 12px;
+  }
   li {
+    border-radius: var(--gov-small-size);
     padding: 8px 16px;
     cursor: pointer;
     

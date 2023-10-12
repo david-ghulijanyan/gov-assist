@@ -1,1 +1,14 @@
-.root {}
+.root {
+	position: relative;
+	font-weight: 500;
+	padding-left: 16px;
+	width: 25%;
+	&::before {
+		content: "";
+		left: 0;
+		position: absolute;
+		width: 6px;
+		height: 100%;
+		background-color: var(--gov-grey-xl);
+	}
+}

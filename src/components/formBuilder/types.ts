@@ -1,8 +1,4 @@
-export type FormField = 
-  | TextField
-  | EmailField
-  | SelectField
-  | CheckboxField;
+import { DropdownItem } from "../dropdown";
 
 export type TextField = {
   id: string;
@@ -23,7 +19,7 @@ export type SelectField = {
   name: string;
   placeholder: string;
   type: 'select';
-  options: string[];
+  options: DropdownItem[];
 };
 
 export type CheckboxField = {
@@ -32,3 +28,9 @@ export type CheckboxField = {
   label: string;
   type: 'checkbox';
 };
+
+export type FormField = 
+  | TextField
+  | EmailField
+  | SelectField
+  | CheckboxField;

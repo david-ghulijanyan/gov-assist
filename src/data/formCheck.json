@@ -33,9 +33,9 @@
 		"placeholder": "Your country of birth",
 		"type": "select",
 		"options": [
-			"USA",
-			"Canada",
-			"Australia"
+			{"label": "USA","id": "USA"},
+			{"label": "Canada","id": "Canada"},
+			{"label": "Australia","id": "Australia"}
 		]
 	},
 	{
@@ -44,8 +44,14 @@
 		"placeholder": "Marial Status",
 		"type": "select",
 		"options": [
-			"Single",
-			"Married"
+			{
+				"label": "Single",
+				"id": "single"
+			},
+			{
+				"label": "Married",
+				"id": "married"
+			}
 		]
 	},
 	{

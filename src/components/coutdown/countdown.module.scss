@@ -1,1 +1,12 @@
-.root {}
+.root {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 6px;
+}
+.item {
+	background-color: var(--gov-blue-xl);
+	border-radius: var(--gov-small-size);
+	padding: var(--gov-small-size);
+	align-items: center;
+	line-height: 1;
+}

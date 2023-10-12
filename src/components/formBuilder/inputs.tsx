@@ -1,4 +1,7 @@
+'use client';
+
 import { FC } from 'react';
+import { Dropdown } from '../dropdown';
 import { CheckboxField, EmailField, SelectField, TextField } from './types';
 
 export const TextInput: FC<TextField> = ({ id, name, placeholder }) => (
@@ -10,19 +13,12 @@ export const EmailInput: FC<EmailField> = ({ id, name, placeholder }) => (
 );
 
 export const SelectInput: FC<SelectField> = ({ id, name, placeholder, options }) => (
-  <select id={id} name={name}>
-    <option value="" disabled>{placeholder}</option>
-    {options.map((option, index) => (
-      <option key={index} value={option}>
-        {option}
-      </option>
-    ))}
-  </select>
+  <Dropdown id={id} name={name} placeholder={placeholder} options={options} onChange={(e) => {e.preventDefault()}} />
 );
 
 export const CheckboxInput: FC<CheckboxField> = ({ id, name, label }) => (
   <div>
-    <input id={id} name={name} type="checkbox" />
+    <input id={id} name={name} type="checkbox" style={{ marginRight: 12 }} />
     <label htmlFor={id}>{label}</label>
   </div>
 );

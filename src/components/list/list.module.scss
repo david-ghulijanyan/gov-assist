@@ -4,5 +4,11 @@
 	justify-content: space-between;
 	> li {
 		display: block;
+		padding: 0;
 	}
+}
+.icon {
+	margin: 8px 16px 8px 0;
+	width: 31px;
+	height: 31px;
 }

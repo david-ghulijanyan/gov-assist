@@ -1,4 +1,8 @@
+'use client';
+
+import classNames from 'classnames';
 import { FC } from 'react';
+import styles from "./formBuilder.module.scss";
 import { CheckboxInput, EmailInput, SelectInput, TextInput } from './inputs';
 import { FormRow } from './row';
 import { FormField } from './types';
@@ -25,7 +29,7 @@ const FormBuilder: FC<FormBuilderProps> = ({ data, className }) => {
   };
 
   return (
-    <form className={className}>
+    <form className={classNames(styles.root, className)}>
       {data.map((item, index) => {
         if (Array.isArray(item)) {
           return (

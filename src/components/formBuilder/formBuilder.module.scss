@@ -1,1 +1,17 @@
-.root {}
+.root {
+	button {
+		color: inherit;
+		font-weight: 500;
+		width: 100%;
+		background-color: var(--gov-grey-l);
+		justify-content: space-between;
+		padding: var(--gov-small-size) var(--gov-h4-size) !important;
+		path {
+			fill: none;
+			stroke: var(--gov-black);
+		}
+	}
+	ul {
+		width: 100%;
+	}
+}

@@ -1,9 +1,9 @@
 [
 	{
-		"label": "The official deadline is running, so hurry up and %apply here!%",
+		"label": "The official deadline is running, so hurry up and %apply here%!",
 		"tags": [
 			{
-				"id": "apply here!",
+				"id": "apply here",
 				"tag": "a",
 				"props": {
 					"href": "/registration"

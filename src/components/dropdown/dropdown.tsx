@@ -1,19 +1,29 @@
 'use client';
 
-import { FC, useRef, useState } from 'react';
+import classNames from 'classnames';
+import { FC, ReactNode, useRef, useState } from 'react';
+import { Button } from '../button';
+import { Icon } from '../icon';
 import styles from './dropdown.module.scss';
 
-interface DropdownProps {
-  options: string[];
-  label?: string;
-  onChange: (value: string) => void;
+export interface DropdownItem {
+  id: string;
+  label: ReactNode | string;
 }
 
-const Dropdown: FC<DropdownProps> = ({ options, label, onChange }) => {
+export interface DropdownProps {
+  id?: string,
+  options: DropdownItem[];
+  label?: string;
+  onChange: (value: DropdownItem | string) => void;
+  className?: string;
+}
+
+const Dropdown: FC<DropdownProps> = ({ id, options, label, onChange, className }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selected, setSelected] = useState<string | undefined>();
-	const ref = useRef<HTMLDivElement | null>(null);
-	
+  const [selected, setSelected] = useState<DropdownItem | string>(options && options[0]);
+  const ref = useRef<HTMLDivElement | null>(null);
+
   const handleOutsideClick = (event: MouseEvent) => {
     if (ref.current && !ref.current.contains(event.target as Node)) {
       setIsOpen(false);
@@ -21,13 +31,14 @@ const Dropdown: FC<DropdownProps> = ({ options, label, onChange }) => {
     }
   };
 
-  const handleSelection = (option: string) => {
+  const handleSelection = (option: DropdownItem) => {
     setSelected(option);
     onChange(option);
     setIsOpen(false);
   };
 
-  const toggleDropdown = () => {
+  const toggleDropdown = (e) => {
+    e.preventDefault();
     if (!isOpen) {
       document.addEventListener('mousedown', handleOutsideClick);
     } else {
@@ -36,16 +47,20 @@ const Dropdown: FC<DropdownProps> = ({ options, label, onChange }) => {
     setIsOpen(!isOpen);
   };
 
+  const displayLabel =
+    selected && typeof selected !== 'string' ? selected.label : selected;
+  
   return (
-    <div className={styles.root} ref={ref}>
-      <button className={styles.button} onClick={toggleDropdown}>
-        {selected || label || 'Select option'}
-      </button>
+    <div id={id} className={classNames(styles.root, className)} ref={ref}>
+      <Button variant='outline-primary' size='small' className={styles.button} onClick={toggleDropdown}>
+        {displayLabel || label || 'Select option'}
+        <Icon name="arrow-down" className={styles.icon}></Icon>
+      </Button>
       {isOpen && (
         <ul className={styles.list}>
-          {options.map(option => (
-            <li key={option} onClick={() => handleSelection(option)}>
-              {option}
+          {options.map(({ label, id }) => (
+            <li key={id} onClick={() => handleSelection({ id, label })}>
+              {label}
             </li>
           ))}
         </ul>
@@ -54,4 +69,4 @@ const Dropdown: FC<DropdownProps> = ({ options, label, onChange }) => {
   );
 };
 
-export default Dropdown;
+export { Dropdown };

@@ -1,1 +1,10 @@
-.root {}
+.root {
+	display: flex;
+	gap: var(--gov-h3-size);
+	> button {
+		border-color: var(--gov-white);
+		color: var(--gov-white);
+		text-transform: uppercase;
+		padding: var(--gov-small-size) var(--gov-h3-size) !important;
+	}
+}

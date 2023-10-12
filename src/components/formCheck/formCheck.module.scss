@@ -9,7 +9,7 @@
 	background-color: var(--gov-white);
 	display: flex;
 	flex-direction: column;
-	gap: 24px;
+	gap: 16px;
 }
 
 .arrow {
@@ -28,10 +28,11 @@
 .form {
 	display: flex;
 	flex-direction: column;
-	gap: 26px;
-	input {
-		padding: 24px;
-		background-color: var(--gov-grey-xl);
+	gap: 16px;
+	color: var(--gov-black);
+	input, select {
+		padding: 16px 24px;
+		background-color: var(--gov-grey-l);
 		border-radius: var(--gov-border-m);
 	}
 }

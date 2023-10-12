@@ -1,7 +1,10 @@
 'use client';
 
 import { FC, useEffect, useState } from 'react';
+import { Flex } from '../flex';
+import { Text } from '../text';
 import { calculateTimeLeft } from './calculateTimeLeft';
+import styles from "./countdown.module.scss";
 
 interface CountdownProps {
 	targetDate: string;
@@ -19,39 +22,39 @@ const Countdown: FC<CountdownProps> = ({ targetDate }) => {
 	}, [targetDate]);
 
 	return (
-		<div>
-			<div>
-				<span>
+		<div className={styles.root}>
+			<Flex direction='column' className={styles.item}>
+				<Text variant='h3' weight='xxl'>
 					{timeLeft.days}
-				</span>
-				<span>
+				</Text>
+				<Text variant='small' weight='xs' style={{color: "#A5DEFF"}}>
 					Days
-				</span>
-			</div>
-			<div>
-				<span>
+				</Text>
+			</Flex>
+			<Flex direction='column' className={styles.item}>
+				<Text variant='h3' weight='xxl'>
 					{timeLeft.hours}
-				</span>
-				<span>
+				</Text>
+				<Text  variant='small' weight='xs' style={{color: "#A5DEFF"}}>
 					Hours
-				</span>
-			</div>
-			<div>
-				<span>
+				</Text>
+			</Flex>
+			<Flex direction='column' className={styles.item}>
+				<Text variant='h3' weight='xxl'>
 					{timeLeft.minutes}
-				</span>
-				<span>
+				</Text>
+				<Text variant='small' weight='xs' style={{color: "#A5DEFF"}}>
 					Minutes
-				</span>
-			</div>
-			<div>
-				<span>
+				</Text>
+			</Flex>
+			<Flex direction='column' className={styles.item}>
+				<Text variant='h3' weight='xxl'>
 					{timeLeft.seconds}
-				</span>
-				<span>
+				</Text>
+				<Text variant='small' weight='xs' style={{color: "#A5DEFF"}}>
 					Seconds
-				</span>
-			</div>
+				</Text>
+			</Flex>
 		</div>
 	);
 };

@@ -13,6 +13,7 @@ interface ButtonProps {
   variant?: ButtonVariant;
   border?: ButtonBorder;
   onClick?: () => void;
+  className?: string;
 }
 
 export const Button: FC<PropsWithChildren<ButtonProps>> = ({
@@ -21,13 +22,15 @@ export const Button: FC<PropsWithChildren<ButtonProps>> = ({
   border = 's',
   onClick,
   children,
+  className
 }) => (
   <button
     className={classNames(
       styles.btn,
       styles[`size-${size}`],
       styles[variant],
-      styles[`border-${border}`]
+      styles[`border-${border}`],
+      className
     )}
     onClick={onClick}
   >

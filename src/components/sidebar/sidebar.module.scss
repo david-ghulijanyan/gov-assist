@@ -1,0 +1,12 @@
+.root {
+	padding: var(--gov-h1-size) var(--gov-h1-size);
+	color: var(--gov-white);
+	height: calc(100vh - calc(var(--gov-h1-size) * 2));
+	background-image: var(--gov-brand-gradient);
+	width: 40%;
+	justify-content: space-between;
+	display: flex;
+}
+.quote {
+	width: 100%;
+}

@@ -1,5 +1,6 @@
 'use client';
 
+import classNames from 'classnames';
 import Image from 'next/image';
 import { languages } from '../../data';
 import { Button } from '../button';
@@ -7,8 +8,8 @@ import { Dropdown } from '../dropdown';
 import { Text } from '../text';
 import styles from './menu.module.scss';
 
-function Menu() {
-	return <div className={styles.root}>
+function Menu({className}:{className: string}) {
+	return <div className={classNames(styles.root, className)}>
 		<Dropdown onChange={() => {}} options={languages.map(({ id, label }) => {
 			return {
 				id, 

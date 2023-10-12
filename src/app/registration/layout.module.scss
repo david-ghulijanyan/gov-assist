@@ -1,0 +1,21 @@
+.root {
+	position: relative;	
+}
+.menu {
+	position: absolute;
+	top: var(--gov-h1-size);
+	right: var(--gov-h1-size);
+	button {
+		color: var(--gov-blue-l) !important;
+		border-color: var(--gov-blue-l) !important;
+		path {
+			stroke: var(--gov-blue-l);
+		}
+	}
+}
+.copyrights {
+	position: absolute;
+	bottom: var(--gov-h6-size);
+	right: var(--gov-h1-size);
+	color: var(--gov-blue-l);
+}

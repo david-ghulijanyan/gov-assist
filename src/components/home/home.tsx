@@ -19,7 +19,7 @@ const Home: FC<PropsWithChildren<{}>> = () => {
               <Text as="h1" variant="h1" ><Text color="primary">Win the right to live</Text> <br />in the USA!</Text>
             </Flex>
             <Flex reverse alignItems='center' style={{gap: 40}}>
-              <Quote>{replaceWithJsx(quotes[0].label, quotes[0].tags as unknown as TagProps[])}</Quote>
+              <Quote className={styles.quote}>{replaceWithJsx(quotes[0].label, quotes[0].tags as unknown as TagProps[])}</Quote>
               <Countdown targetDate={targetDate} />
             </Flex>
             <List />

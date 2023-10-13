@@ -13,12 +13,12 @@ const Home: FC<PropsWithChildren<{}>> = () => {
     <Hero backgroundImage="/assets/images/bg.webp">
       <Container className={styles.container}>
         <Header />
-        <Flex className={styles.content}>
+        <Flex reverse className={styles.content}>
           <Flex direction="column" justifyContent="space-between">
             <Flex alignItems='center'>
               <Text as="h1" variant="h1" ><Text color="primary">Win the right to live</Text> <br />in the USA!</Text>
             </Flex>
-            <Flex alignItems='center' style={{gap: 40}}>
+            <Flex reverse alignItems='center' style={{gap: 40}}>
               <Quote>{replaceWithJsx(quotes[0].label, quotes[0].tags as unknown as TagProps[])}</Quote>
               <Countdown targetDate={targetDate} />
             </Flex>

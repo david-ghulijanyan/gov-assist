@@ -4,17 +4,22 @@
   justify-content: center;
   width: 100vw;
   position: relative;
+  min-height: 100vh;
 
-  &.fullheight {
-    height: 100vh;
-  }
+  @media screen and (min-width: 768px) {
+    min-height: auto;
+    
+    &.fullheight {
+      height: 100vh;
+    }
 
-  &.half {
-    height: 50vh;
-  }
+    &.half {
+      height: 50vh;
+    }
 
-  &.small {
-    height: 25vh;
+    &.small {
+      height: 25vh;
+    }
   }
 }
 

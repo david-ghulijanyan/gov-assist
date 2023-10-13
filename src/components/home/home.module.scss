@@ -3,8 +3,11 @@
 }
 
 .container {
-	height: calc(100vh - 53px);
-	padding-top: 53px;
+	padding: 53px 0;
+
+	@media screen and (min-width: 768px) {
+		height: calc(100vh - 53px);
+	}
 	color: var(--gov-white);
 		a {
 		color: inherit;
@@ -13,7 +16,11 @@
 }
 
 .content {
-	height: calc(100% - 200px);
+
+	@media screen and (min-width: 768px) {
+		height: calc(100% - 200px);
+	}
+
 	> div {
 		&:first-child {
 		padding-top: 60px;

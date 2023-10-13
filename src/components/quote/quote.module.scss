@@ -2,7 +2,9 @@
 	position: relative;
 	font-weight: 500;
 	padding-left: 16px;
-	width: 25%;
+	@media screen and (min-width: 768px) {
+		width: 25%;
+	}
 	&::before {
 		content: "";
 		left: 0;

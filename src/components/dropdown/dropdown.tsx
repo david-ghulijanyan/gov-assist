@@ -1,7 +1,7 @@
 'use client';
 
 import classNames from 'classnames';
-import { FC, ReactNode, useRef, useState } from 'react';
+import { FC, MouseEvent, ReactNode, useRef, useState } from 'react';
 import { Button } from '../button';
 import { Icon } from '../icon';
 import styles from './dropdown.module.scss';
@@ -17,6 +17,8 @@ export interface DropdownProps {
   label?: string;
   onChange: (value: DropdownItem | string) => void;
   className?: string;
+  name?: string;
+  placeholder?: string;
   anchor?: 'left' | 'right';
 }
 
@@ -25,7 +27,7 @@ const Dropdown: FC<DropdownProps> = ({ id, options, label, onChange, className, 
   const [selected, setSelected] = useState<DropdownItem | string>(options && options[0]);
   const ref = useRef<HTMLDivElement | null>(null);
 
-  const handleOutsideClick = (event: MouseEvent) => {
+  const handleOutsideClick = (event: globalThis.MouseEvent) => {
     if (ref.current && !ref.current.contains(event.target as Node)) {
       setIsOpen(false);
       document.removeEventListener('mousedown', handleOutsideClick);
@@ -38,7 +40,7 @@ const Dropdown: FC<DropdownProps> = ({ id, options, label, onChange, className, 
     setIsOpen(false);
   };
 
-  const toggleDropdown = (e) => {
+  const toggleDropdown = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     if (!isOpen) {
       document.addEventListener('mousedown', handleOutsideClick);

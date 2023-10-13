@@ -32,7 +32,7 @@ interface Review {
 }
 
 interface CarouselProps {
-  reviews: Review[];
+  reviews?: Review[];
 }
 
 const Carousel: FC<CarouselProps> = ({ reviews = data }) => {
@@ -40,11 +40,11 @@ const Carousel: FC<CarouselProps> = ({ reviews = data }) => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
 	// @TODO: make links work with replacewithJsx function
-	const genReviewLink = (reviewId) => {
+	const genReviewLink = (reviewId: string) => {
 		return `https://www.trustpilot.com/reviews/${reviewId}`;
 	}
 
-	const genUserLink = (userId) => {
+	const genUserLink = (userId: string) => {
 		return `https://www.trustpilot.com/reviews/${userId}`;
 	}
 

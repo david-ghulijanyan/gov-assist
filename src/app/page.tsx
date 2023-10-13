@@ -1,9 +1,9 @@
-import { Find, Footer, FormSubscribe, Home, Carousel } from '@/components';
-import { FC, PropsWithChildren } from 'react';
-import "../ui/reset.scss";
+import { Carousel, Find, Footer, FormSubscribe, Home } from '@/components';
+import { FC } from 'react';
 import "../ui/globals.scss";
+import "../ui/reset.scss";
 
-const Index: FC<PropsWithChildren> = () => {
+const Index: FC = () => {
   return (
     <main> 
       <Home />

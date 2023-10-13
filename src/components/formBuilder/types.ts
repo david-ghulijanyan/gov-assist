@@ -5,21 +5,21 @@ export type TextField = {
   name: string;
   placeholder: string;
   type: string | 'text';
-  className: string;
+  className?: string;
 };
 
 export type EmailField = {
   id: string;
   name: string;
   placeholder: string;
-  type: 'email';
+  type: string | 'email';
 };
 
 export type SelectField = {
   id: string;
   name: string;
   placeholder: string;
-  type: 'select';
+  type: string | 'select';
   options: DropdownItem[];
 };
 
@@ -27,7 +27,7 @@ export type CheckboxField = {
   id: string;
   name: string;
   label: string;
-  type: 'checkbox';
+  type: string | 'checkbox';
 };
 
 export type FormField = 

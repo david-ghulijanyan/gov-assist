@@ -13,7 +13,7 @@ interface FormBuilderProps {
 }
 
 const FormBuilder: FC<FormBuilderProps> = ({ data, className }) => {
-  const renderField = (field: FormField) => {
+  const renderField = (field: any) => {
     switch (field.type) {
       case 'text':
         return <TextInput {...field} />;

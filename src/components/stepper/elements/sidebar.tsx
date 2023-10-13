@@ -9,7 +9,7 @@ import { activeStepIndexAtom } from '../modifications';
 import styles from './stepper.module.scss';
 
 interface StepperSidebarProps {
-  steps: TextField[];
+  steps?: TextField[];
 }
 
 const StepperSidebar: FC<StepperSidebarProps> = ({ steps }) => {

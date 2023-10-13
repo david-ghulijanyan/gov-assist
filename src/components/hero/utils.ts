@@ -1,3 +1,5 @@
+import { HeroProps } from ".";
+
 const mapAlignment = (align: HeroProps['align']) => {
   switch (align) {
     case 'start': return 'flex-start';
@@ -20,6 +22,6 @@ const mapJustify = (justify: HeroProps['justify']) => {
 };
 
 export {
-	mapAlignment,
-	mapJustify
+  mapAlignment,
+  mapJustify
 };

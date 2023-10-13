@@ -8,7 +8,7 @@ import { Dropdown } from '../dropdown';
 import { Text } from '../text';
 import styles from './menu.module.scss';
 
-function Menu({className}:{className: string}) {
+function Menu({className}:{className?: string}) {
 	return <div className={classNames(styles.root, className)}>
 		<Dropdown onChange={() => {}} options={languages.map(({ id, label }) => {
 			return {

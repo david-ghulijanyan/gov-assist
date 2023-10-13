@@ -13,7 +13,7 @@ export const EmailInput: FC<EmailField> = ({ id, name, placeholder }) => (
 );
 
 export const SelectInput: FC<SelectField> = ({ id, name, placeholder, options }) => (
-  <Dropdown id={id} name={name} placeholder={placeholder} options={options} onChange={(e) => {e.preventDefault()}} />
+  <Dropdown id={id} name={name} placeholder={placeholder} options={options} onChange={(e: any) => {e.preventDefault()}} />
 );
 
 export const CheckboxInput: FC<CheckboxField> = ({ id, name, label }) => (

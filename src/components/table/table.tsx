@@ -34,7 +34,7 @@ const Table: FC<TableProps> = ({ data }) => {
           <Text variant='h4' className={styles.title}>
             Mandatory Government Fees for Green Cards
           </Text>
-          <Button variant='danger' border='m' size='s'>
+          <Button variant='danger' border='m' size='small'>
             Apply now
           </Button>
         </Flex>
@@ -69,7 +69,7 @@ const Table: FC<TableProps> = ({ data }) => {
       </table>
       </div>
       <Flex className={styles.calc} alignItems='center' justifyContent='flex-end'>
-        <Text weight='300'>Fees are subject to change, please use <Link target='_blank' href='https://www.uscis.gov/feecalculator'>this calculator</Link></Text>
+        <Text weight='xs'>Fees are subject to change, please use <Link target='_blank' href='https://www.uscis.gov/feecalculator'>this calculator</Link></Text>
       </Flex>
       </>
   );

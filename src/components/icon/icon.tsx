@@ -32,9 +32,9 @@ const Icon: FC<IconProps> = ({ name, className, style }) => {
 				<svg className={className} style={style} width="26" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M2 9.333 8.765 16 25 2" stroke="#fff" stroke-width="3" style={{
 						"stroke": "#fff",
-						"stroke-opacity": "1",
-						"stroke-width": "3.00094488",
-						"stroke-dasharray": "none",
+						"strokeOpacity": "1",
+						"strokeWidth": "3.00094488",
+						"strokeDasharray": "none",
 						"fill": "none"
 					}} />
 				</svg>

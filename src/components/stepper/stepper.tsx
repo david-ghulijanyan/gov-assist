@@ -13,7 +13,7 @@ import { StepperControls } from './elements/controls';
 import { activeStepIndexAtom } from './modifications';
 import styles from "./stepper.module.scss";
 
-const Stepper: FC<{steps: TextField[]}> = ({ steps }) => {
+const Stepper: FC<{steps?: TextField[]}> = ({ steps }) => {
 	const [activeStepIndex] = useRecoilState(activeStepIndexAtom);
   const contentRef = useRef<HTMLDivElement | null>(null);
   

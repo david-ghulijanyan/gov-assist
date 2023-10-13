@@ -8,7 +8,7 @@ import styles from './formSubscribe.module.scss';
 function FormSubscribe() {
 	return <div className={styles.root}>
 		<Container>
-			<Text variant="h2" weight='xs' color='primary' >Let's keep in touch for news</Text>
+			<Text variant="h2" weight='xs' color='primary' >Let&apos;s keep in touch for news</Text>
 			<Flex className={styles.wrapper}>
 				<Text variant='h4' as='p' weight='m'>Subscribe to be the first do receive updates and be in advantage on your application proccess</Text>
 				<form>

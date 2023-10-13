@@ -3,7 +3,7 @@ import { FC, ReactNode } from 'react';
 import styles from './hero.module.scss';
 import { mapAlignment, mapJustify } from './utils';
 
-interface HeroProps {
+export interface HeroProps {
   children?: ReactNode;
   backgroundImage?: string;
   height?: 'fullheight' | 'half' | 'small';

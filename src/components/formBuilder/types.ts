@@ -4,7 +4,8 @@ export type TextField = {
   id: string;
   name: string;
   placeholder: string;
-  type: 'text';
+  type: string | 'text';
+  className: string;
 };
 
 export type EmailField = {

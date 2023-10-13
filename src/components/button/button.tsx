@@ -1,7 +1,7 @@
 import classNames from 'classnames';
-import { FC, PropsWithChildren } from 'react';
+import { FC, MouseEventHandler, PropsWithChildren } from 'react';
 import styles from './button.module.scss';
-
+ 
 export type ButtonSize = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'small';
 
 export type ButtonVariant = 'primary' | 'secondary' | 'outline-primary' | 'outline-secondary' | 'danger' | 'info' | 'success' | 'warning';
@@ -12,7 +12,7 @@ interface ButtonProps {
   size?: ButtonSize;
   variant?: ButtonVariant;
   border?: ButtonBorder;
-  onClick?: () => void;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
   className?: string;
 }
 

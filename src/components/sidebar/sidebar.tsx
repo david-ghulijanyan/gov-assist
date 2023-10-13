@@ -1,28 +1,12 @@
-import { Flex, List, Logo, Quote, Text } from '../';
-import { quotes } from '../../data';
-import { replaceWithJsx } from '../../utils';
-import { TagProps } from '../../utils/replaceWithJsx';
+import classNames from 'classnames';
+import { FC, PropsWithChildren } from 'react';
+import { Start as StartSidebar } from "./elements/start";
 import styles from './sidebar.module.scss';
 
-function Sidebar() {
-	return <div className={styles.root}>
-		<Flex direction="column" justifyContent="space-between">
-			<Logo />
-				<Flex alignItems='center'>
-					<Text as="h1" variant="h1" >Eletronic <br /><Text color="primary">diversity visa </Text> <br />entry form</Text>
-				</Flex>
-				<Flex alignItems='center'>
-					<Text weight='s' variant="h2" >Here you will fill all <br/>your information to <br/>reach your dream.</Text>
-				</Flex>
-				<List data={[{
-		"icon": "/assets/images/icon-forward.webp",
-		"label": "10 minutes to finish"
-	}]} />
-				<Flex alignItems='center'>
-					<Quote className={styles.quote}>{replaceWithJsx(quotes[3].label, quotes[3].tags as unknown as TagProps[])}</Quote>
-				</Flex>
-			</Flex>
+const Sidebar: FC<PropsWithChildren<{ small?: boolean }>> = ({ children, small = false }) => {
+	return <div className={classNames(styles.root, small && styles.small)}>
+		{children}
 	</div>
 }
 
-export { Sidebar };
+export { Sidebar, StartSidebar };

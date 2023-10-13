@@ -8,13 +8,13 @@ $font-size-clamp: clamp($size-base, $font-size-base, 24px) !default;
 $size-base: 16px !default;
 
 // Font size calculations
-$h1-size: calc($size-base + (64 - 16) * (100vw - 400px) / (1600 - 400));
-$h2-size: calc($size-base + (54 - 16) * (100vw - 400px) / (1600 - 400));
-$h3-size: calc($size-base + (36 - 16) * (100vw - 400px) / (1600 - 400));
-$h4-size: calc($size-base + (24 - 16) * (100vw - 400px) / (1600 - 400));
-$h5-size: calc($size-base + (20 - 16) * (100vw - 400px) / (1600 - 400));
-$h6-size: calc($size-base + (16 - 16) * (100vw - 400px) / (1600 - 400));
-$small-size: calc($size-base + (12 - 16) * (100vw - 400px) / (1600 - 400));
+$h1-size: calc($size-base + (64 - 16) * (100vw - 500px) / (1600 - 400));
+$h2-size: calc($size-base + (54 - 16) * (100vw - 500px) / (1600 - 400));
+$h3-size: calc($size-base + (36 - 16) * (100vw - 500px) / (1600 - 400));
+$h4-size: calc($size-base + (24 - 16) * (100vw - 500px) / (1600 - 400));
+$h5-size: calc($size-base + (20 - 16) * (100vw - 500px) / (1600 - 400));
+$h6-size: calc($size-base + (16 - 16) * (100vw - 500px) / (1600 - 400));
+$small-size: calc($size-base + (12 - 16) * (100vw - 500px) / (1600 - 400));
 
 // borders
 $border-zero: 0 !default;

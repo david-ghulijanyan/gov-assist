@@ -6,5 +6,6 @@ import list from "./list.json";
 import navigations from "./navigations.json";
 import quotes from "./quotes.json";
 import reviews from "./reviews.json";
+import stepper from "./stepper.json";
 
-export { codes, fees, formCheck, languages, list, navigations, quotes, reviews };
+export { codes, fees, formCheck, languages, list, navigations, quotes, reviews, stepper };

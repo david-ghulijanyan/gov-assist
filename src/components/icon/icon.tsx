@@ -1,5 +1,5 @@
 // @TODO: All icons should be converted to font
-import React, { CSSProperties } from 'react';
+import { CSSProperties, FC } from 'react';
 
 interface IconProps {
 	name: string;
@@ -7,12 +7,12 @@ interface IconProps {
 	style?: CSSProperties;
 }
 
-const Icon: React.FC<IconProps> = ({ name, className, style }) => {
+const Icon: FC<IconProps> = ({ name, className, style }) => {
 	switch (name) {
 		case 'arrow-down-round':
 			return (
-				<svg className={className} style={style} width="12" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M6 5.976c-.485 0-.97-.187-1.336-.554L.151.909C-.05.708-.05.375.15.175c.2-.201.533-.201.733 0l4.514 4.513a.852.852 0 0 0 1.204 0L11.116.175c.2-.201.533-.201.733 0 .201.2.201.533 0 .734L7.336 5.422A1.887 1.887 0 0 1 6 5.976z" fill="#fff" />
+				<svg className={className} style={style} width="48" height="25" viewBox="0 0 48 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M45.4039 22L27.9498 4.54597C25.8885 2.48468 22.5155 2.48468 20.4542 4.54597L3 22" stroke="white" stroke-width="4.75" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 				</svg>
 			);
 		case 'arrow-down-square':
@@ -30,8 +30,14 @@ const Icon: React.FC<IconProps> = ({ name, className, style }) => {
 		case 'check':
 			return (
 				<svg className={className} style={style} width="26" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M2 9.333 8.765 16 25 2" stroke="#fff" stroke-width="3" style="stroke:#fff;stroke-opacity:1;stroke-width:3.00094488;stroke-dasharray:none;fill:none" />
-					</svg>
+					<path d="M2 9.333 8.765 16 25 2" stroke="#fff" stroke-width="3" style={{
+						"stroke": "#fff",
+						"stroke-opacity": "1",
+						"stroke-width": "3.00094488",
+						"stroke-dasharray": "none",
+						"fill": "none"
+					}} />
+				</svg>
 			);
 		case 'document-text':
 			return (
@@ -49,7 +55,7 @@ const Icon: React.FC<IconProps> = ({ name, className, style }) => {
 			return (
 				<svg className={className} style={style} width="34" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M21.062 24.594c-.342 0-.685-.126-.956-.397a1.36 1.36 0 0 1 0-1.912l9.991-9.99-9.99-9.991a1.36 1.36 0 0 1 0-1.912 1.36 1.36 0 0 1 1.911 0L32.965 11.34a1.36 1.36 0 0 1 0 1.912L22.018 24.197c-.27.27-.613.397-.956.397z" fill="#fff" />
-				<path d="M31.704 13.647H1.353c-.74 0-1.353-.613-1.353-1.352 0-.74.613-1.353 1.353-1.353h30.35c.74 0 1.353.613 1.353 1.353 0 .739-.613 1.352-1.352 1.352z" fill="#fff" />
+					<path d="M31.704 13.647H1.353c-.74 0-1.353-.613-1.353-1.352 0-.74.613-1.353 1.353-1.353h30.35c.74 0 1.353.613 1.353 1.353 0 .739-.613 1.352-1.352 1.352z" fill="#fff" />
 				</svg>
 			);
 		case 'star-rate':

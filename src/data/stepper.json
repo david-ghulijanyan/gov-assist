@@ -1,0 +1,45 @@
+[
+	{ "label": "Name", "id": "name", "name": "name", "placeholder": "Input your name", "type": "text"
+	},
+	{ "label": "Contant Information", "id": "phone", "name": "phone", "placeholder": "+1 604 123 4567", "type": "phone"
+	},
+	{ "label": "Gender", "id": "name", "name": "gender", "placeholder": "Input your name", "type": "email"
+	},
+	{ "label": "Birth Information", "id": "name", "name": "birth", "placeholder": "Input your last name", "type": "text"
+	},
+	{
+		"label": "Country of Eligibility",
+		"id": "name",
+		"name": "country_of_eligibility",
+		"placeholder": "Input your location",
+		"type": "text"
+	},
+	{
+		"label": "Photograph",
+		"id": "name",
+		"name": "photograph",
+		"placeholder": "Input your location",
+		"type": "text"
+	},
+	{
+		"label": "Mailing Address",
+		"id": "name",
+		"name": "mailing_address",
+		"placeholder": "Input your location",
+		"type": "text"
+	},
+	{
+		"label": "Additional Information",
+		"id": "name",
+		"name": "extra",
+		"placeholder": "Input your location",
+		"type": "text"
+	},
+	{
+		"label": "Payment",
+		"id": "name",
+		"name": "payment",
+		"placeholder": "Input your location",
+		"type": "text"
+	}
+]

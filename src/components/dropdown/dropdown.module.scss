@@ -31,6 +31,10 @@
   color: var(--gov-black);
   background-color: white;
   width: 200px;
+  &.left {
+    right: auto;
+    left: 0;
+  }
   img {
     margin-right: 12px;
   }

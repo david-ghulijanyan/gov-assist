@@ -1,0 +1,77 @@
+.step {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  align-items: flex-start;
+  text-transform: capitalize;
+  color: var(--gov-grey);
+  &:not(:first-child)::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: calc(100% - 22px);
+    width: 4px;
+    transform: translateX(10px);
+    bottom: 100%;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        var(--gov-white),
+        var(--gov-white) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+  }
+  &.active {
+    &:not(:last-child)::before {
+      background-image: none;
+      background-color: var(--gov-white);
+    }
+
+    .dot {
+      background-color: var(--gov-white);
+    }
+  }
+
+
+}
+
+  .dot {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--gov-white);
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+
+.controls {
+  display: flex;
+  gap: 0;
+  width: calc(100% - var(--gov-h1-size));
+  justify-content: flex-end;
+  padding-right: var(--gov-h1-size);
+  button {
+    border-radius: 0 !important;
+    padding: var(--gov-h6-size) var(--gov-h5-size) !important;
+    
+    path {
+      fill: none;
+      stroke: var(--gov-white);
+    }
+    &:first-child {
+      border-top-left-radius: 8px !important;
+      border-bottom-left-radius: 8px !important;
+    }
+    &:last-child {
+      border-top-right-radius: 8px !important;
+      border-bottom-right-radius: 8px !important;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    &:not(:last-child) {
+      border-right: 2px solid rgba(255,255,255,0.1);
+    }
+  }
+}

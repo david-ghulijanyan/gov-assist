@@ -3,9 +3,13 @@
 	color: var(--gov-white);
 	height: calc(100vh - calc(var(--gov-h1-size) * 2));
 	background-image: var(--gov-brand-gradient);
-	width: 40%;
+	width: calc(40% - calc(var(--gov-h1-size) * 2));
 	justify-content: space-between;
 	display: flex;
+	&.small {
+		width: calc(22% - calc(var(--gov-h2-size) * 2));
+		padding: var(--gov-h1-size) var(--gov-h2-size);
+	}
 }
 .quote {
 	width: 100%;

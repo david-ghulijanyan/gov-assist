@@ -29,9 +29,11 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1.3;
     font-family: var(--base-font-family);
-    color: var(--black);
-    background-color: var(--white);
+    color: var(--gov-black);
+    background-color: var(--gov-white);
     font-size: var(--font-size-clamp);
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 ol, ul {
@@ -83,4 +85,8 @@ audio, canvas, iframe, img, svg, video {
 
 svg {
     fill: currentColor;
+}
+
+::placeholder {
+    color: var(--gov-grey-xl);
 }

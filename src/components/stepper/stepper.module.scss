@@ -1,0 +1,37 @@
+.root {
+	flex-grow: 1;
+	align-items: center;
+	padding-bottom: calc(var(--gov-h1-size) * 1);
+}
+.title {
+	text-transform: capitalize;
+	color: var(--gov-blue-s);
+}
+.button {
+	display: flex;
+	gap: 8px;
+	padding: var(--gov-small-size) var(--gov-h4-size) !important;
+	background-color: var(--gov-grey-xl) !important;
+	border-color: var(--gov-grey-xl) !important;
+}
+.icon {
+	transform: scale(0.8);
+}
+.form {
+	
+}
+.input {
+	border-bottom: 1px solid var(--gov-grey-xl);
+	font-size: var(--gov-h3-size);
+	font-weight: 300;
+	button {
+		color: var(--gov-grey-xl);
+		gap: 24px;
+		padding: 24px !important;
+		// border-bottom: 1px solid var(--gov-black);
+		border-radius: 0 !important;
+		path {
+			stroke: var(--gov-black);
+		}
+	}
+}

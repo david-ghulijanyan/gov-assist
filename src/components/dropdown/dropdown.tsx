@@ -17,9 +17,10 @@ export interface DropdownProps {
   label?: string;
   onChange: (value: DropdownItem | string) => void;
   className?: string;
+  anchor?: 'left' | 'right';
 }
 
-const Dropdown: FC<DropdownProps> = ({ id, options, label, onChange, className }) => {
+const Dropdown: FC<DropdownProps> = ({ id, options, label, onChange, className, anchor = "right" }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState<DropdownItem | string>(options && options[0]);
   const ref = useRef<HTMLDivElement | null>(null);
@@ -57,7 +58,7 @@ const Dropdown: FC<DropdownProps> = ({ id, options, label, onChange, className }
         <Icon name="arrow-down" className={styles.icon}></Icon>
       </Button>
       {isOpen && (
-        <ul className={styles.list}>
+        <ul className={classNames(styles.list, styles[anchor])}>
           {options.map(({ label, id }) => (
             <li key={id} onClick={() => handleSelection({ id, label })}>
               {label}
